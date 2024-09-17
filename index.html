@@ -13,17 +13,18 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="top"></div>
     <nav id="menu">
-      <a href="#main">JUPITER</a>
-      <a href="#distance-time">Avstand og tid</a>
-      <a href="#moons">Jupiters måner</a>
-      <a href="#red-spot">Den store røde flekken</a>
-      <a href="#spacecraft">Fartøy til Jupiter</a>
-      <a href="gallery">Bildegalleri</a>
+      <a href="#top"><div class="navlinks">JUPITER</div></a>
+      <a href="#distance-time"><div class="navlinks">Avstand og tid</div></a>
+      <a href="#moons"><div class="navlinks">Jupiters måner</div></a>
+      <a href="#red-spot"><div class="navlinks">Den store røde flekken</div></a>
+      <a href="#spacecraft"><div class="navlinks">Fartøy til Jupiter</div></a>
+      <a href="gallery"><div class="navlinks">Bildegalleri</div></a>
     </nav>
 
     <section id="main">
-      <div>
+      <div id="intro">
         <h1>JUPITER</h1>
         <p>
           Jupiter er den største planeten i solsystemet. Det er en såkalt
@@ -35,8 +36,53 @@
       <img
         id="jupiter-main"
         src="images/jupiter-7291995_1280.jpg"
-        alt="The planet Jupiter in partial shade."
+        alt="Jupiter i delvis skygge."
       />
+    </section>
+    <section id="distance-time">
+      <img
+        id="jupiter-png"
+        src="images/jupiter-153563_1280.png"
+        alt="Et bilde av Jupiter"
+      />
+
+      <div id="distance-time-text">
+        <h2>AVSTAND OG TID</h2>
+        <p>
+          Avstanden mellom Jupiter og solen er i snitt på 778 millioner
+          kilometer. Det er omtrent fem ganger avstanden mellom solen og jorden.
+          Det tar Jupiter nesten 12 år å gjennomføre ett solomløp. Ett døgn,
+          derimot, varer i underkant av ti timer.
+        </p>
+      </div>
+    </section>
+    <section id="moons">
+      <div id="moon-text">
+        <h2>JUPITERS MÅNER</h2>
+        <p>
+          Jupiter har 95 måner i omløp, inkludert Ganymedes. Ganymedes er den
+          største månen i solsystemet, og er større enn både Merkur og Pluto.
+          <br />
+          Andre kjente måner rundt Jupiter er Io, solsystemets mest vulkansk
+          aktive verden, og Europa, en vannfylt isverden litt mindre enn vår
+          egen måne.
+          <br />
+          Alle disse er såkalte “galileiske måner”, måner oppdaget av Galileo
+          Galilei i 1610.
+        </p>
+      </div>
+      <div id="moon-images">
+        <img
+          class="jupiter-moons"
+          src="images/jpegPIA01627.width-1600.jpg"
+          alt="Jupiters indre satelitter."
+        />
+        <img
+          class="jupiter-moons"
+          src="images/Jupiter_moons_family_portrait-1280x900-1-jpg.webp"
+          alt="Fire av Jupiters måner."
+        />
+      </div>
     </section>
   </body>
 </html>
