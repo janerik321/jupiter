@@ -11,6 +11,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 76px;
 }
 body {
   font-family: Inknut Antiqua;
@@ -21,6 +22,7 @@ h1 {
 }
 h2 {
   color: var(--timberwolf);
+  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -30,6 +32,9 @@ p {
   color: var(--timberwolf);
 }
 
+.caption {
+  font-size: 14px;
+}
 #menu {
   display: flex;
   flex-direction: row;
@@ -60,10 +65,11 @@ p {
   align-items: center;
   padding: 0px 120px;
   overflow: hidden;
+  gap: 10vw;
 }
 #jupiter-main {
   width: 40vw;
-  margin: 0px 0px 0px 10vw;
+
   border-radius: 35%;
 }
 #intro {
@@ -78,6 +84,7 @@ p {
   align-items: center;
   padding: 0px 120px;
   overflow: hidden;
+  gap: 15vw;
 }
 #distance-time-text {
   /* height: 60%; */
@@ -87,36 +94,100 @@ p {
 }
 #jupiter-png {
   width: 25vw;
-  margin: 0px 15vw 0px 0px;
+}
+#jupiter-png:hover {
+  filter: brightness(1.25);
 }
 #moons {
   height: calc(100vh - 76px);
   display: flex;
   background-color: black;
-  justify-content: center;
+  background-image: linear-gradient(to top, #2b2826, black);
+  justify-content: space-between;
   align-items: center;
   padding: 0px 120px;
   overflow: hidden;
+  gap: 7vw;
   /* border: 1px solid red; */
 }
 #moon-text {
   /* border: 1px solid blue; */
+  width: 45vw;
 }
 #moon-images {
-  /* width: 50vw; */
+  width: 23vw;
   height: calc(100vh - 76px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 0px 0px 0px 7vw;
+  /* align-items: center; */
+  /* padding: 0px 0px 0px 7vw; */
+  /* gap: 10px; */
   /* border: 1px solid green; */
 }
 .jupiter-moons {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   /* border: 1px solid yellow; */
   /* padding: 0px 0px 0px 10vw; */
   /* padding: 120px; */
-  margin: 30px;
+  margin: 30px 0px 0px 0px;
+}
+#red-spot {
+  height: calc(100vh - 76px);
+  display: flex;
+  background-color: black;
+  background-image: linear-gradient(to left, #2b2826, black);
+  justify-content: center;
+  align-items: center;
+  padding: 0px 120px;
+  overflow: hidden;
+  gap: 7vw;
+}
+#red-spot-background {
+  background-image: url(/images/PIA22178.gif);
+  background-size: cover;
+  height: calc(35vw / 1.7777778);
+
+  /* border: 1px solid red; */
+}
+#red-spot-image {
+  width: 35vw;
+
+  /* border: 1px solid var(--timberwolf); */
+}
+#red-spot-image:hover {
+  opacity: 0%;
+}
+
+#red-spot-text {
+  /* border: 1px solid green; */
+}
+
+#gallery-main {
+  height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #2b2826, black);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 120px;
+  overflow: hidden;
+}
+#gallery {
+  /* width: 80vw; */
+  display: flex;
+  border: 1px solid red;
+  gap: 10px;
+}
+.gallery-image {
+  width: 200px;
+  /* height: 200px; */
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid var(--timberwolf);
+}
+.gallery-image img {
+  width: 100%;
+  /* height: auto; */
 }
