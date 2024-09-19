@@ -45,78 +45,123 @@ p {
   font-size: 14px;
   padding: 0px 40px;
   position: sticky;
-  /* justify-content: space-between; */
   top: 0;
-  /* line-height: 4; */
-  /* border: 1px solid red; */
+
+  z-index: 10;
 }
 .navlinks {
-  /* display: flex; */
   padding: 20px;
-  /* border: 1px solid green; */
 }
 .navlinks:hover {
   background-color: black;
 }
 
+@media only screen and (max-width: 1030px) {
+  #menu {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+  }
+  .navlinks {
+    padding: 1px;
+  }
+  #hero {
+    height: calc(100vh - 252px);
+  }
+}
+
+#to-top {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  font-size: 35px;
+}
+#to-top a:hover {
+  color: white;
+}
 /* Section 1 hero */
-#hero {
-  height: calc(100vh - 76px);
+header {
+  height: 100vh;
   display: flex;
-  background-color: black;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url(images/stars-7088_512.gif);
+}
+#hero {
+  height: 100%;
+  display: flex;
+
   justify-content: center;
   align-items: center;
   padding: 0px 120px;
   overflow: hidden;
   gap: 10vw;
+
+  background-color: rgba(000, 000, 000, 0.6);
 }
 #jupiter-main {
   width: 40vw;
 
-  border-radius: 35%;
+  border-radius: 50%;
 }
-#intro {
-  /* height: 80%; */
+#bottom-hero {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+#down {
+  width: 100%;
+  font-size: 35px;
+  color: var(--timberwolf);
+  background-color: rgba(000, 000, 000, 0.6);
+
+  text-align: center;
+  z-index: 1;
+}
+#dark {
+  width: 60px;
+  height: 100%;
+  background-color: black;
+  z-index: 1;
 }
 
+header a:hover {
+  filter: brightness(2);
+}
 /* Section 2 distance & time  */
 #distance-time {
   height: calc(100vh - 76px);
   display: flex;
-  /* background-color: var(--eerieblack); */
-  background-image: linear-gradient(to left, #2b2826, black);
+
+  background: linear-gradient(to left, #2b2826, black);
   justify-content: center;
   align-items: center;
   padding: 0px 120px;
   overflow: hidden;
   gap: 15vw;
 }
-#distance-time-text {
-  /* height: 60%; */
-  /* background-color: red; */
-  /* position: relative;
-  bottom: 200; */
-}
+
 #jupiter-png {
   width: 25vw;
 }
 #jupiter-png:hover {
   filter: brightness(1.25);
 }
+
+/* Section 3 moons of Jupiter */
 #moons {
   height: calc(100vh - 76px);
   display: flex;
   background-color: black;
-  background-image: linear-gradient(to top, #2b2826, black);
+  background: linear-gradient(to top, #2b2826, black);
   justify-content: space-between;
   align-items: center;
   padding: 0px 120px;
   overflow: hidden;
   gap: 7vw;
-  /* border: 1px solid red; */
 }
 #moon-text {
-  /* border: 1px solid blue; */
   width: 45vw;
 }
 #moon-images {
@@ -125,24 +170,20 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  /* padding: 0px 0px 0px 7vw; */
-  /* gap: 10px; */
-  /* border: 1px solid green; */
 }
 .jupiter-moons {
   max-width: 100%;
   max-height: 100%;
-  /* border: 1px solid yellow; */
-  /* padding: 0px 0px 0px 10vw; */
-  /* padding: 120px; */
   margin: 30px 0px 0px 0px;
+  border-radius: 4%;
 }
+
+/* Section 4 great red spot */
 #red-spot {
   height: calc(100vh - 76px);
   display: flex;
   background-color: black;
-  background-image: linear-gradient(to left, #2b2826, black);
+  background: linear-gradient(to left, #2b2826, black);
   justify-content: center;
   align-items: center;
   padding: 0px 120px;
@@ -153,37 +194,28 @@ p {
   background-image: url(/images/PIA22178.gif);
   background-size: cover;
   height: calc(35vw / 1.7777778);
-
-  /* border: 1px solid red; */
+  border-radius: 4%;
 }
 #red-spot-image {
   width: 35vw;
-
-  /* border: 1px solid var(--timberwolf); */
+  border-radius: 4%;
 }
 #red-spot-image:hover {
   opacity: 0%;
 }
 
-#red-spot-text {
-  /* border: 1px solid green; */
-}
-
-/* Spacecraft to Jupiter section */
+/* Section 5 spacecraft to Jupiter */
 #SpaceCrafts {
   height: calc(100vh - 76px);
   display: flex;
   flex-direction: column;
-  background-color: black;
+  justify-content: center;
+  background: linear-gradient(to top, #2b2826, black);
   padding: 0px 120px;
   overflow: hidden;
-  /* border: 1px solid blue; */
 }
-/ .flex-container {
-  display: flex;
-  border: 1px solid red;
-}
-/ #Spacecafttext {
+
+#Spacecafttext {
   width: 50%;
   font-size: calc(1vw + 10px);
   max-width: 50ch;
@@ -193,52 +225,69 @@ p {
   width: 100%;
   max-height: 50%;
   display: flex;
-  /* flex-direction: column; */
-  /* border: 5px solid green; */
+
   align-items: center;
   gap: 3vw;
 }
 #Junocraft img {
-  /* width: 100%; */
   height: 100%;
+  border-radius: 4%;
 }
 
 .europa-clipper {
   width: 100%;
   max-height: 50%;
   display: flex;
-  /* flex-direction: column; */
-  /* border: 5px solid green; */
+
   justify-content: center;
   align-items: center;
   gap: 3vw;
 }
 
+.europa-clipper img {
+  border-radius: 4%;
+}
+
+/* <!-- Section 6 image gallery --> */
 #gallery-main {
   height: calc(100vh - 76px);
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to top, #2b2826, black);
   justify-content: space-between;
   align-items: center;
-  padding: 30px 120px;
+  background: linear-gradient(to left, #2b2826, black);
+
+  padding: 5vh 120px;
   overflow: hidden;
 }
 #gallery {
-  /* width: 80vw; */
   display: flex;
-  border: 1px solid red;
+  height: 100%;
+  padding: 5vh;
+  align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .gallery-image {
   width: 200px;
-  /* height: 200px; */
+  height: fit-content;
   text-align: center;
   font-size: 14px;
-  border: 1px solid var(--timberwolf);
+  border: 1px solid rgba(216, 205, 199, 0.5);
+  padding: 10px;
+  background-color: var(--raisinblack);
 }
 .gallery-image img {
   height: 120px;
-
-  /* height: auto; */
+}
+.gallery-image:hover {
+  filter: brightness(1.2);
+}
+footer {
+  height: 76px;
+  display: flex;
+  background: linear-gradient(to bottom, #2b2826, black);
+  border-top: 1px solid var(--timberwolf);
+  justify-content: center;
+  align-items: center;
 }

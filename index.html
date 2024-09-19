@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="images/89139_jupiter_icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,33 +14,44 @@
     <title>Document</title>
   </head>
   <body>
-    <nav id="menu">
-      <a href="#hero"><div class="navlinks">JUPITER</div></a>
-      <a href="#distance-time"><div class="navlinks">Avstand og tid</div></a>
-      <a href="#moons"><div class="navlinks">Jupiters måner</div></a>
-      <a href="#red-spot"><div class="navlinks">Den store røde flekken</div></a>
-      <a href="#SpaceCrafts"><div class="navlinks">Fartøy til Jupiter</div></a>
-      <a href="#gallery"><div class="navlinks">Bildegalleri</div></a>
-    </nav>
     <main>
       <!-- Section 1 hero -->
-      <section id="hero">
-        <div id="intro">
-          <h1>JUPITER</h1>
-          <p>
-            Jupiter er den største planeten i solsystemet. Det er en såkalt
-            “gass-kjempe” som i hovedsak består av ulike gasser og væsker.
-            Jupiter har altså ingen fast overflate. Massen til Jupiter er mer
-            enn dobbelt så mye som alle de andre planetene i solsystemet til
-            sammen!
-          </p>
+      <header>
+        <div id="hero">
+          <div id="intro">
+            <h1>JUPITER</h1>
+            <p>
+              Jupiter er den største planeten i solsystemet. Det er en såkalt
+              “gass-kjempe” som i hovedsak består av ulike gasser og væsker.
+              Jupiter har altså ingen fast overflate. Massen til Jupiter er mer
+              enn dobbelt så mye som alle de andre planetene i solsystemet til
+              sammen!
+            </p>
+          </div>
+          <img
+            id="jupiter-main"
+            src="images/jupiter-7291995_1280.jpg"
+            alt="Jupiter i delvis skygge."
+          />
         </div>
-        <img
-          id="jupiter-main"
-          src="images/jupiter-7291995_1280.jpg"
-          alt="Jupiter i delvis skygge."
-        />
-      </section>
+        <div id="bottom-hero">
+          <div id="down"><a href="#distance-time">▼</a></div>
+          <div id="dark"></div>
+        </div>
+      </header>
+      <nav id="menu">
+        <a href="#hero"><div class="navlinks">JUPITER</div></a>
+        <a href="#distance-time"><div class="navlinks">Avstand og tid</div></a>
+        <a href="#moons"><div class="navlinks">Jupiters måner</div></a>
+        <a href="#red-spot"
+          ><div class="navlinks">Den store røde flekken</div></a
+        >
+        <a href="#SpaceCrafts"
+          ><div class="navlinks">Fartøy til Jupiter</div></a
+        >
+        <a href="#gallery-main"><div class="navlinks">Bildegalleri</div></a>
+      </nav>
+      <div id="to-top"><a href="#hero">▲</a></div>
       <!-- Section 2 distance & time -->
       <section id="distance-time">
         <img
@@ -141,37 +153,50 @@
       <section id="gallery-main">
         <h2>BILDEGALLERI</h2>
         <div id="gallery">
-          <div class="gallery-image">
-            <a href="images/204_PIA19048.jpg">
+          <a href="images/204_PIA19048.jpg">
+            <div class="gallery-image">
               <img
                 src="images/204_PIA19048.jpg"
                 alt="Europa, en av Jupiters måner."
               />
-            </a>
-            <p>Europa</p>
-          </div>
-          <div class="gallery-image">
-            <a href="images/292_GreatRedSpot640.jpg">
+
+              <p>Europa</p>
+            </div></a
+          >
+          <a href="images/292_GreatRedSpot640.jpg">
+            <div class="gallery-image">
               <img
                 src="images/292_GreatRedSpot640.jpg"
                 alt="Den store røde flekken."
               />
-            </a>
-            <p>Den store røde flekken</p>
-          </div>
-          <div class="gallery-image">
-            <a
-              href="images/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~large.jpg"
-            >
+
+              <p>Den store røde flekken</p>
+            </div></a
+          >
+          <a
+            href="images/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~large.jpg"
+          >
+            <div class="gallery-image">
               <img
                 src="images/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~large.jpg"
                 alt="Polarlys på Jupiter."
               />
-            </a>
-            <p>Polarlys</p>
-          </div>
+
+              <p>Polarlys</p>
+            </div></a
+          >
+          <a href="images/IMG000619.webp">
+            <div class="gallery-image">
+              <img src="images/IMG000619.webp" alt="Romsonden Cassini." />
+
+              <p>Romsonden Cassini</p>
+            </div></a
+          >
         </div>
       </section>
     </main>
+    <footer>
+      <p>September 2024</p>
+    </footer>
   </body>
 </html>
