@@ -35,6 +35,7 @@ p {
 .caption {
   font-size: 14px;
 }
+/* navbar */
 #menu {
   display: flex;
   flex-direction: row;
@@ -57,7 +58,9 @@ p {
 .navlinks:hover {
   background-color: black;
 }
-#main {
+
+/* Section 1 hero */
+#hero {
   height: calc(100vh - 76px);
   display: flex;
   background-color: black;
@@ -75,6 +78,8 @@ p {
 #intro {
   /* height: 80%; */
 }
+
+/* Section 2 distance & time  */
 #distance-time {
   height: calc(100vh - 76px);
   display: flex;
@@ -164,6 +169,51 @@ p {
   /* border: 1px solid green; */
 }
 
+/* Spacecraft to Jupiter section */
+#SpaceCrafts {
+  height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 0px 120px;
+  overflow: hidden;
+  /* border: 1px solid blue; */
+}
+/ .flex-container {
+  display: flex;
+  border: 1px solid red;
+}
+/ #Spacecafttext {
+  width: 50%;
+  font-size: calc(1vw + 10px);
+  max-width: 50ch;
+}
+
+#Junocraft {
+  width: 100%;
+  max-height: 50%;
+  display: flex;
+  /* flex-direction: column; */
+  /* border: 5px solid green; */
+  align-items: center;
+  gap: 3vw;
+}
+#Junocraft img {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.europa-clipper {
+  width: 100%;
+  max-height: 50%;
+  display: flex;
+  /* flex-direction: column; */
+  /* border: 5px solid green; */
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+
 #gallery-main {
   height: calc(100vh - 76px);
   display: flex;
@@ -188,6 +238,7 @@ p {
   border: 1px solid var(--timberwolf);
 }
 .gallery-image img {
-  width: 100%;
+  height: 120px;
+
   /* height: auto; */
 }

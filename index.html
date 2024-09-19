@@ -13,129 +13,165 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="top"></div>
     <nav id="menu">
-      <a href="#top"><div class="navlinks">JUPITER</div></a>
+      <a href="#hero"><div class="navlinks">JUPITER</div></a>
       <a href="#distance-time"><div class="navlinks">Avstand og tid</div></a>
       <a href="#moons"><div class="navlinks">Jupiters måner</div></a>
       <a href="#red-spot"><div class="navlinks">Den store røde flekken</div></a>
-      <a href="#spacecraft"><div class="navlinks">Fartøy til Jupiter</div></a>
+      <a href="#SpaceCrafts"><div class="navlinks">Fartøy til Jupiter</div></a>
       <a href="#gallery"><div class="navlinks">Bildegalleri</div></a>
     </nav>
-
-    <section id="main">
-      <div id="intro">
-        <h1>JUPITER</h1>
-        <p>
-          Jupiter er den største planeten i solsystemet. Det er en såkalt
-          “gass-kjempe” som i hovedsak består av ulike gasser og væsker. Jupiter
-          har altså ingen fast overflate. Massen til Jupiter er mer enn dobbelt
-          så mye som alle de andre planetene i solsystemet til sammen!
-        </p>
-      </div>
-      <img
-        id="jupiter-main"
-        src="images/jupiter-7291995_1280.jpg"
-        alt="Jupiter i delvis skygge."
-      />
-    </section>
-    <section id="distance-time">
-      <img
-        id="jupiter-png"
-        src="images/jupiter-153563_1280.png"
-        alt="Et bilde av Jupiter"
-      />
-
-      <div id="distance-time-text">
-        <h2>AVSTAND OG TID</h2>
-        <p>
-          Avstanden mellom Jupiter og solen er i snitt på 778 millioner
-          kilometer. Det er omtrent fem ganger avstanden mellom solen og jorden.
-          Det tar Jupiter nesten 12 år å gjennomføre ett solomløp. Ett døgn,
-          derimot, varer i underkant av ti timer.
-        </p>
-      </div>
-    </section>
-    <section id="moons">
-      <div id="moon-text">
-        <h2>JUPITERS MÅNER</h2>
-        <p>
-          Jupiter har 95 måner i omløp, inkludert Ganymedes. Ganymedes er den
-          største månen i solsystemet, og er større enn både Merkur og Pluto.
-          Andre kjente måner rundt Jupiter er Io, solsystemets mest vulkansk
-          aktive verden, og Europa, en vannfylt isverden litt mindre enn vår
-          egen måne. Alle disse er såkalte “galileiske måner”, måner oppdaget av
-          Galileo Galilei i 1610.
-        </p>
-      </div>
-      <div id="moon-images">
+    <main>
+      <!-- Section 1 hero -->
+      <section id="hero">
+        <div id="intro">
+          <h1>JUPITER</h1>
+          <p>
+            Jupiter er den største planeten i solsystemet. Det er en såkalt
+            “gass-kjempe” som i hovedsak består av ulike gasser og væsker.
+            Jupiter har altså ingen fast overflate. Massen til Jupiter er mer
+            enn dobbelt så mye som alle de andre planetene i solsystemet til
+            sammen!
+          </p>
+        </div>
         <img
-          class="jupiter-moons"
-          src="images/jpegPIA01627.width-1600.jpg"
-          alt="Jupiters indre satelitter."
+          id="jupiter-main"
+          src="images/jupiter-7291995_1280.jpg"
+          alt="Jupiter i delvis skygge."
+        />
+      </section>
+      <!-- Section 2 distance & time -->
+      <section id="distance-time">
+        <img
+          id="jupiter-png"
+          src="images/jupiter-153563_1280.png"
+          alt="Et bilde av Jupiter"
         />
 
-        <img
-          class="jupiter-moons"
-          src="images/Jupiter_moons_family_portrait-1280x900-1-jpg.webp"
-          alt="Fire av Jupiters måner."
-        />
-        <p class="caption">De galileiske måner</p>
-      </div>
-    </section>
-    <section id="red-spot">
-      <div id="red-spot-background">
-        <img
-          id="red-spot-image"
-          src="images/PIA22178.jpg"
-          alt="A closeup of the Great Red Spot"
-        />
-      </div>
-      <div id="red-spot-text">
-        <h2>DEN STORE RØDE FLEKKEN</h2>
-        <p>
-          Jupiter er også kjent for det som blir omtalt som den store røde
-          flekken. Dette er en storm med en størrelse på dobbelt av jordens
-          bredde. Det er usikkert hvor lenge denne stormen har pågått, men det
-          anslås å være minst 150 år.
-        </p>
-      </div>
-    </section>
+        <div id="distance-time-text">
+          <h2>AVSTAND OG TID</h2>
+          <p>
+            Avstanden mellom Jupiter og solen er i snitt på 778 millioner
+            kilometer. Det er omtrent fem ganger avstanden mellom solen og
+            jorden. Det tar Jupiter nesten 12 år å gjennomføre ett solomløp. Ett
+            døgn, derimot, varer i underkant av ti timer.
+          </p>
+        </div>
+      </section>
+      <!-- Section 3 moons of Jupiter -->
+      <section id="moons">
+        <div id="moon-text">
+          <h2>JUPITERS MÅNER</h2>
+          <p>
+            Jupiter har 95 måner i omløp, inkludert Ganymedes. Ganymedes er den
+            største månen i solsystemet, og er større enn både Merkur og Pluto.
+            Andre kjente måner rundt Jupiter er Io, solsystemets mest vulkansk
+            aktive verden, og Europa, en vannfylt isverden litt mindre enn vår
+            egen måne. Alle disse er såkalte “galileiske måner”, måner oppdaget
+            av Galileo Galilei i 1610.
+          </p>
+        </div>
+        <div id="moon-images">
+          <img
+            class="jupiter-moons"
+            src="images/jpegPIA01627.width-1600.jpg"
+            alt="Jupiters indre satelitter."
+          />
 
-    <section id="spacecraft"></section>
-    <section id="gallery-main">
-      <h2>BILDEGALLERI</h2>
-      <div id="gallery">
-        <div class="gallery-image">
-          <a href="images/204_PIA19048.jpg">
-            <img
-              src="images/204_PIA19048.jpg"
-              alt="Europa, en av Jupiters måner."
-            />
-          </a>
-          <p>Europa</p>
+          <img
+            class="jupiter-moons"
+            src="images/Jupiter_moons_family_portrait-1280x900-1-jpg.webp"
+            alt="Fire av Jupiters måner."
+          />
+          <p class="caption">De galileiske måner</p>
         </div>
-        <div class="gallery-image">
-          <a href="images/292_GreatRedSpot640.jpg">
-            <img
-              src="images/292_GreatRedSpot640.jpg"
-              alt="Den store røde flekken."
-            />
-          </a>
-          <p>Den store røde flekken</p>
+      </section>
+      <!-- Section 4 great red spot -->
+      <section id="red-spot">
+        <div id="red-spot-background">
+          <img
+            id="red-spot-image"
+            src="images/PIA22178.jpg"
+            alt="A closeup of the Great Red Spot"
+          />
         </div>
-        <div class="gallery-image">
-          <a
-            href="images/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~large.jpg"
-          >
-            <img
-              src="images/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~large.jpg"
-              alt="Polarlys på Jupiter."
-            />
-          </a>
-          <p>Polarlys</p>
+        <div id="red-spot-text">
+          <h2>DEN STORE RØDE FLEKKEN</h2>
+          <p>
+            Jupiter er også kjent for det som blir omtalt som den store røde
+            flekken. Dette er en storm med en størrelse på dobbelt av jordens
+            bredde. Det er usikkert hvor lenge denne stormen har pågått, men det
+            anslås å være minst 150 år.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- Section 5 spacecraft to Jupiter -->
+      <section id="SpaceCrafts">
+        <div id="Junocraft">
+          <img
+            class="spacecraft images"
+            src="images/Vadim-Sadovski_Shutterstock-378x288.jpg"
+            alt="Juno spacecraft"
+          />
+          <div>
+            <h2>FARTØY TIL JUPITER</h2>
+            <p class="Spacecafttext">
+              Den første romsonden som ble sendt til Jupiter var Pioneer 10 som
+              nådde planeten i 1973. Siden den gang har det blitt sendt flere
+              farkoster til gasskjempen. Sonden Juno har vært i omløp rundt
+              Jupiter siden 2016, hvor den blant annet har fått i oppdrag å
+              finne ut om planetens opphav og utvikling.
+            </p>
+          </div>
+        </div>
+        <div class="europa-clipper">
+          <p class="Spacecafttext">
+            I oktober 2024 skal NASA sende romsonden Europa Clipper til Jupiter,
+            hvor den skal undersøke om Europa, en av Jupiters måner, støtter
+            mulighet for liv.
+          </p>
+          <img
+            class="spacecraft images"
+            src="images/europa-clipper__1.jpg"
+            alt="europa-clipper spacecraft"
+          />
+        </div>
+      </section>
+      <!-- Section 6 image gallery -->
+      <section id="gallery-main">
+        <h2>BILDEGALLERI</h2>
+        <div id="gallery">
+          <div class="gallery-image">
+            <a href="images/204_PIA19048.jpg">
+              <img
+                src="images/204_PIA19048.jpg"
+                alt="Europa, en av Jupiters måner."
+              />
+            </a>
+            <p>Europa</p>
+          </div>
+          <div class="gallery-image">
+            <a href="images/292_GreatRedSpot640.jpg">
+              <img
+                src="images/292_GreatRedSpot640.jpg"
+                alt="Den store røde flekken."
+              />
+            </a>
+            <p>Den store røde flekken</p>
+          </div>
+          <div class="gallery-image">
+            <a
+              href="images/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~large.jpg"
+            >
+              <img
+                src="images/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~large.jpg"
+                alt="Polarlys på Jupiter."
+              />
+            </a>
+            <p>Polarlys</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
