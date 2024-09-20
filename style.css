@@ -191,7 +191,7 @@ header a:hover {
   gap: 7vw;
 }
 #red-spot-background {
-  background-image: url(/images/PIA22178b.gif);
+  background-image: url(images/PIA22178b.gif);
   background-size: cover;
   height: calc(35vw / 1.7777778);
   border-radius: 4%;
